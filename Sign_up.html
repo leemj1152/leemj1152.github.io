@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Document</title>
+    <style>
+        h1{text-align: center; padding: 150px; margin: 0;}
+        body{background-image: radial-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.9)),url(../../images/f.jpg); height: 100px; background-size: cover;}
+        
+        
+    
+    </style>
+    
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="">
+        <fieldset>
+            <legend>회원가입</legend>
+             <ul>
+                 <li><label for="name">이름: </label>
+                     <input type="text" name="name" id="n" autofoucs>
+                 
+                 
+                </li>
+                 <li><label for="natinality">국적: </label>
+                     <input type="text" name="natinality" id="natinality" value="대한민국" readonly>
+                 
+                 
+                </li>
+                  <li><label for="id">아이디: </label>
+                     <input type="text" name="id" id="id" placeholder="영어 소문자 8자 이상">
+                 
+                 
+                </li>
+                <li><label for="password">비밀번호: </label>
+                     <input type="text" name="password" id="password" placeholder="영어와 숫자 8자 ~20자" title="비밀번호는 영어와 숫자조합으로 이루어진 8글자 이상 입니다" pattern="/^(?=.*[a-zA-Z])((?=.*\d)|(?=.*\W)).{6,20}$/">
+                 
+                 
+                </li>
+                
+                 
+             </ul>
+             
+             <input type="submit" value="가입신청">
+            
+            
+        </fieldset>
+        
+        
+        
+    </form>
+    
+    
+</body>
+</html>

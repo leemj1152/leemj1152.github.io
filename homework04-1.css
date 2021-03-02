@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*기본색상*/
+:root{
+    --main-color:#5D9AB2;
+    --accect-color:#BF6A7A;
+    --dark-main-color:#2B5566;
+    --title-font-color:#fff;
+}
+
+.top{margin: 0px; height: auto;}
+
+h1{background-color: black; color: aliceblue; margin: 0px;}
+
+.search{height: 40px; width: 500px; border: 10px solid green; display: inline-block;
+ position: absolute; top: 30%; left: 36%;
+}
+
+input{font-size: 16px; width: 426px; padding: 10px; border: px; outline: none;
+float: left;
+}
+
+button{width: 50px; height: 40px; padding: 1px; border: px; background-color: #1b5ac2;
+outline: none;  color: #ffffff
+}
+
+input:-ms-input-placeholder{color: #a8a8a8;}
+input::-webkit-input-placeholder{color: #a8a8a8;}
+input::-moz-placeholder{color: #a8a8a8;}
