@@ -2,115 +2,421 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Investing</title>
-    <link rel="stylesheet" href="homework04-1.css">
-    <style type="text/css">
-        body{padding: 0px; margin: 0px;}
-        h1{padding: 70px; text-align: center; outline: 0px; font-size: 70px;
-        background-image: radial-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.9)),url(image.jpg); height: 100px; background-size: cover;}
-        
-        
-        a{font-size: 15px; color: aliceblue}
-        span{font-size: 25px; float: right; padding: 10px}
-        hr{border: 0px;}
-        .s{color: black}
-        summary{background-color: gray; font-size: 20px; padding: 10px; width: 170px;}
-        .coin{background-color: gold}
-        .gold{background-color: beige}
-        .login{float: right; outline: 0px; font-size: 25px; padding: 10px; color: black}
-        .nav{position: absolute; top: 40%; left: 10%; background-color: aliceblue;}
-        .join{position: absolute; top: 20%; right: 0%; color: black}
-    </style>
-    
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAKS</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/16c7b68ad5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/main.css">
 </head>
-    <div class="top"><h1>Investing.com</h1></div>
-      
-      <div class="join">
-        <a href="Sign_up.html" class="login">회원가입</a>  <span> / </span> <a href="Login.html" class="login">로그인</a></div>
-
-     <br><br>
-    
-     <div class="search">  
-      <form action="https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&sq=&o=&q=다음" method="get" target="_blank">
-         
-          <input type="text" placeholder="검색어를 입력하세요"> 
-            
-             
-    <button name="button">검색</button>
-         </form>
-    </div>
-     
-      <br><br><br>  
-    
-    <div class="nav"> 
-              
-    <details open>
-        
-        <summary class="stock">주식시장</summary>
-        
-        <ul>
-            <a href="https://m.stock.naver.com/index.html#/worldstock/home/USA/marketValue/NYSE" class="s" target="_blank"><li>미국</li></a>
-            <a href="https://m.stock.naver.com/sise/siseList.nhn?menu=market_sum&sosok=0" class="s"><li>대한민국</li></a>
-            <a href="https://m.stock.naver.com/index.html#/worldstock/home/CHN/marketValue/SHANGHAI" class="s" target="_blank"><li>중국</li></a>
-            <a href="https://m.stock.naver.com/index.html#/worldstock/home/VNM/marketValue/HOCHIMINH" class="s" target="_blank"><li>베트남</li></a>
-            
-        </ul>
-        
-    </details><br>
-    
-    <details open>
-        
-        <summary class="coin">가상화폐 거래소</summary>
-        
-        <ul>
-            <a href="https://www.bithumb.com/" class="s" target="_blank"><li>Bithumb</li></a>
-            <a href="https://coinone.co.kr/?__cf_chl_jschl_tk__=42df37b0c419cacf6af156f1ad9523963291cbdf-1614389558-0-AUHsQ9B5TCgvblyQCjLpDHXXu_pzA7AdpV-OB9qgcDhBYGW18D9OICgvBW9HE9cjMSnGW15afWBVVCEICSfFdGWRcL8mzIZT__D5uJy-PpfKBJI1ToIzY2u6KcKyILxwbTgO0i06F5hvQFAsZ408JSNeO6aB-ETri7rc-1pKUztILRsJyih34KPQKxPBSf3Bu-BypfW2JfhrFHNenawMiHCsisbWIDNC7d_4FtCYJeMD8JZbVMFB5HCu_kKdM9sjtwnIa7nTpFUTabDX-kewq0bbnHkq30MdS9JT24p_uYP6z1UeeOORcvji1ri6e42Fcg" class="s" target="_blank"><li>Coin One</li></a>
-            <a href="https://www.gopax.co.kr/" class="s" target="_blank"><li>Gopax</li></a>
-            <a href="https://www.upbit.com/home" class="s" target="_blank"><li>Upbit</li></a>
-            
-            
-        </ul>
-        
-    </details> 
-    <br>
-    <details open>
-        
-        <summary class="gold">실물, 안전자산</summary>
-        
-        <ul>
-            <a href="https://finance.naver.com/marketindex/" class="s" target="_blank"><li>환율 및 유가, 금시세</li></a>
-            
-           
-            
-        </ul>
-        
-    </details>          
-    </div> 
-                 
-                      
-                  
-                          
-          
-      
-  
-     <div class="contents">
-        <br>
-        <br> 
-         
-        
-         
-     </div>
-     <div class="right">
-         
-         
-         
-         
-     </div>
-
-     
 <body>
     
+    <!-- 메인 슬라이드 이미지 / 상단 고정 메뉴 전체 박스 -->
+    <div class="main-wrap">
+        <img src="images/main/4955e96f09a940238c96481bb72590d8.jpg" alt="메인 이미지" class="mainslide">
+
+        <!-- 상단 고정 메뉴 박스 -->
+        <div class="fixed-menu">
+            <!-- 위치 잡으려고 준 박스 -->
+            <div class="relative">
+                <a href="main.html"><img class="main-logo" src="images/main/logo_daks_white.png" alt=""></a>
+
+                <ul class="center-menu">
+                    <li><a href="brand.html" class="brand">BRAND</a></li>
+                    <li><a href="men.html" class="men">MEN</a></li>
+                    <li><a href="women.html" class="women">WOMEN</a></li>
+                    <li><a href="womenacc.html" class="womenacc">WOMEN ACC</a></li>
+                    <li><a href="manacc.html" class="menacc">MEN ACC</a></li>
+                    <li><a href="golf.html" class="golf">GOLF</a></li>
+                </ul>
+
+                <ul class="right-menu">
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="join.html">JOIN</a></li>
+                    <li><a href="login.html"><i class="fa fa-shopping-bag"></i></a></li>
+                </ul>
+
+                <ul class="toggle-menu">
+                    <li><a href="#" class="all-btn"><i class="fa fa-bars"></i></a></li>
+                    <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+                    <li><a href="login.html"><i class="fa fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
+            <!-- 위치 잡으려고 준 박스 끝-->
+
+            <!-- 자바스크립트 주려고 준 박스 -->
+            <div class="none-menu-box">
+
+                <div class="brand-menu">
+                    <h1><a href="brand.html">BRAND</a></h1>
+
+                    <ul>
+                        <li><a href="brand.html">ABOUT</a></li>
+                        <li><a href="history.html">HISTORY</a></li>
+                        <li><a href="https://daks.com/" target="_blank">GLOBAL DAKS</a></li>
+                    </ul>
+                </div>
+
+                <div class="men-menu all-menu">
+                    <h1><a href="men.html">MEN</a></h1>
+
+                    <ul>
+                        <li><a href="men.html">전체</a></li>
+                        <li><a href="#">티셔츠</a></li>
+                        <li><a href="#">팬츠</a></li>
+                        <li><a href="#">셔츠</a></li>
+                        <li><a href="#">니트/스웨터</a></li>
+                        <li><a href="#">가디건</a></li>
+                        <li><a href="#">자켓/베스트</a></li>
+                        <li><a href="#">수트/정장</a></li>
+                        <li><a href="#">점퍼</a></li>
+                        <li><a href="#">코트</a></li>
+                    </ul>
+                </div>
+
+                <div class="women-menu all-menu">
+                    <h1><a href="women.html">WOMEN</a></h1>
+
+                    <ul>
+                        <li><a href="women.html">전체</a></li>
+                        <li><a href="#">티셔츠</a></li>
+                        <li><a href="#">원피스</a></li>
+                        <li><a href="#">니트/스웨터</a></li>
+                        <li><a href="#">팬츠</a></li>
+                        <li><a href="#">셔츠/블라우스</a></li>
+                        <li><a href="#">스커트</a></li>
+                        <li><a href="#">아우터</a></li>
+                        <li><a href="#">언더웨어/라운지웨어</a></li>
+                    </ul>
+                </div>
+
+                <div class="womenacc-menu all-menu">
+                    <h1><a href="womenacc.html">WOMEN ACC</a></h1>
+
+                    <ul>
+                        <li><a href="womenacc.html">전체</a></li>
+                        <li><a href="#">가방</a></li>
+                        <li><a href="#">기타ACC</a></li>
+                        <li><a href="#">지갑</a></li>
+                        <li><a href="#">스카프/머플러</a></li>
+                        <li><a href="#">모자</a></li>
+                        <li><a href="#">양말</a></li>
+                        <li><a href="#">키링/키홀더</a></li>
+                        <li><a href="#">벨트</a></li>
+                    </ul>
+                </div>
+
+                <div class="menacc-menu all-menu">
+                    <h1><a href="menacc.html">MEN ACC</a></h1>
+
+                    <ul>
+                        <li><a href="menacc.html">전체</a></li>
+                        <li><a href="#">가방</a></li>
+                        <li><a href="#">지갑</a></li>
+                        <li><a href="#">벨트</a></li>
+                        <li><a href="#">양말</a></li>
+                        <li><a href="#">키링/키홀더</a></li>
+                        <li><a href="#">모자</a></li>
+                        <li><a href="#">기타ACC</a></li>
+                    </ul>
+                </div>
+
+                <div class="golf-menu all-menu">
+                    <h1><a href="golf.html">GOLF</a></h1>
+                    
+                    <ul>
+                        <li><a href="golf.html">전체</a></li>
+                        <li><a href="#">남성골프웨어</a></li>
+                        <li><a href="#">여성골프웨어</a></li>
+                        <li><a href="#">골프백</a></li>
+                        <li><a href="#">골프용품</a></li>
+                        <li><a href="#">골프화</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 자바스크립트 주려고 준 박스 -->
+        </div>
+
+        <div class="go-top">
+            <a href="#"><i class="fa fa-long-arrow-up"></i></a>
+        </div>
+
+        <div class="slide-btn-box">
+            <div class="slide-btn b1 active"><span></span></div>
+            <div class="slide-btn b2"><span></span></div>
+            <div class="slide-btn b3"><span></span></div>
+        </div>
+        
+        <!-- 상단 고정 메뉴 박스 -->
+    </div>
+    <!-- 메인 슬라이드 이미지 / 상단 고정 메뉴 전체 박스 -->
+
+    <!-- footer 시작 -->
+    <div class="footer">
+
+        <!-- 이용약관 및 패밀리 사이트 메뉴 -->
+        <div class="family-site-box">
+            <ul>
+                <li><a href="terms.html">이용약관</a></li>
+                <li><a href="personal-information.html">개인정보처리방침</a></li>
+                <li><a href="personal-information.html">청소년보호정책</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="https://www.lfmall.co.kr/p2/display/brandGroup?id=1001&brandUrl=DAKS&etag1=004_A002_E228&etag2=0&etag3=2&etag4=1002&redirCnt=1" target="_blank">LFMALL</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+
+            <ul class="select">
+                <li class="none-li"><a href="http://www.lfcorp.com/" target="_blank">LF CORP</a></li>
+                <li class="none-li"><a href="https://www.lfmall.co.kr/p2/display/brandGroup?id=1017&brandUrl=JILLSTUARTNEWYORK" target="_blank">JILL STUART</a></li>
+                <li class="none-li"><a href="https://www.lfmall.co.kr/p2/display/brandGroup?id=1003&brandUrl=LAFUMA&redirCnt=1" target="_blank">LAFUMA</a></li>
+                <li class="none-li"><a href="https://www.lfmall.co.kr/p2/display/brandGroup?id=1004&brandUrl=TNGT" target="_blank">TNGT</a></li>
+                <li class="none-li"><a href="https://www.lfmall.co.kr/p2/display/brandGroup?id=1007&brandUrl=MAESTRO" target="_blank">MAESTRO</a></li>
+                <li class="none-li"><a href="" target="_blank">HAZZYS</a></li>
+                <li class="none-li"><a href="https://www.lfmall.co.kr/p2/display/brandGroup?id=3576&brandUrl=BLUELOUNGE" target="_blank">BLUE LOUNGE MAESTRO</a></li>
+                <li class="none-li"><a href="https://www.lfmall.co.kr/p2/display/brandGroup?id=1875&brandUrl=ATCORNER&productSaleType=2&etag1=005_A093_E252&etag2=0&etag3=0&etag4=0" target="_blank">A.T.CORNER</a></li>
+                <li class="none-li"><a href="https://www.lfmall.co.kr/p2/display/menu?id=501" target="_blank">LF MALL</a></li>
+                <li class="first-li"><a href="#">FAMILY SITE <i class="fa fa-chevron-down"></i></a></li>
+            </ul>
+            
+        </div>
+        <!-- 이용약관 및 패밀리 사이트 메뉴 끝 -->
+
+        <div class="copyright">
+            <p>사업자 등록번호 : 211-87-87724 | 통신판매업신고 : 제 2010-서울강남-00066호 | <span><a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2118787724&apv_perm_no=" target="_blank">사업자 정보확인 <i class="fa fa-angle-right"></i></a></span><br/>
+                대표전화 :1544-5114 | (유료)팩스 : 031-360-0003<br/>
+                서울 강남구 언주로 870 | (주)LF | 대표이사 오규식, 패션사업부문장 김상균<br/>
+                COPYRIGHTⓒ 2021 DAKS ALL RIGHTS RESERVED.
+            </p>
+        </div>
+
+        <div class="mark">
+            <img src="images/main/footer_copy_01.png" alt="">
+            <img src="images/main/footer_copy_02.png" alt="">
+            <img src="images/main/footer_copy_03.png" alt="">
+            <img class="wori" src="images/main/footer_copy_04.png" alt="">
+            <a href="images/main/footer_usafe_imgwoori_180518.jpeg" target="_blank">서비스 가입사실 확인인 <i class="fa fa-angle-right"></i></a>
+        </div>
+    </div>
+    <!-- footer 끝 -->
+
+    <!-- 자바스크립트 시작 -->
+    <script>
+
+        // 메인 로고 호버시 이미지 바꾸기 구현부
+        $('.fixed-menu').mouseover(function(){
+            if($('.fixed-menu').hasClass('scrolldown') == false){
+                $('.main-logo').attr('src', 'images/main/logo_daks_black.png');
+            }
+                
+        });
+
+        $('.fixed-menu').mouseout(function(){
+            if($('.fixed-menu').hasClass('scrolldown') == false){
+                $('.main-logo').attr('src', 'images/main/logo_daks_white.png');
+            }
+        });
+        // 메인 로고 호버시 이미지 바꾸기 구현부 끝
+
+
+        // 메뉴 호버시 드롭다운 메뉴 보이기 구현부
+        $('.brand').mouseover(function(){
+            $('.brand-menu').css('display', 'block');
+            $('.none-menu-box > :not(.brand-menu)').css('display', 'none');
+            if($('.relative ul').hasClass('open') == true){
+                $('.brand-menu').css('display', 'none');
+            }
+            
+        });
+
+        $('.brand-menu, .fixed-menu').mouseleave(function(){
+            $('.brand-menu').css('display', 'none');
+        });
+
+        $('.men').mouseover(function(){
+            $('.men-menu').css('display', 'block');
+            $('.none-menu-box > :not(.men-menu)').css('display', 'none');
+            if($('.relative ul').hasClass('open') == true){
+                $('.men-menu').css('display', 'none');
+            }
+        });
+
+        $('.men-menu, .fixed-menu').mouseleave(function(){
+            $('.men-menu').css('display', 'none');
+        });
+
+        $('.women').mouseover(function(){
+            $('.women-menu').css('display', 'block');
+            $('.none-menu-box > :not(.women-menu)').css('display', 'none');
+            if($('.relative ul').hasClass('open') == true){
+                $('.women-menu').css('display', 'none');
+            }
+        });
+
+        $('.women-menu, .fixed-menu').mouseleave(function(){
+            $('.women-menu').css('display', 'none');
+        });
+
+        $('.womenacc').mouseover(function(){
+            $('.womenacc-menu').css('display', 'block');
+            $('.none-menu-box > :not(.womenacc-menu)').css('display', 'none');
+            if($('.relative ul').hasClass('open') == true){
+                $('.womenacc-menu').css('display', 'none');
+            }
+        });
+
+        $('.womenacc-menu, .fixed-menu').mouseleave(function(){
+            $('.womenacc-menu').css('display', 'none');
+        });
+
+        $('.menacc').mouseover(function(){
+            $('.menacc-menu').css('display', 'block');
+            $('.none-menu-box > :not(.menacc-menu)').css('display', 'none');
+            if($('.relative ul').hasClass('open') == true){
+                $('.menacc-menu').css('display', 'none');
+            }
+        });
+
+        $('.menacc-menu, .fixed-menu').mouseleave(function(){
+            $('.menacc-menu').css('display', 'none');
+        });
+
+        $('.golf').mouseover(function(){
+            $('.golf-menu').css('display', 'block');
+            $('.none-menu-box > :not(.golf-menu)').css('display', 'none');
+            if($('.relative ul').hasClass('open') == true){
+                $('.golf-menu').css('display', 'none');
+            }
+        });
+
+        $('.golf-menu, .fixed-menu').mouseleave(function(){
+            $('.golf-menu').css('display', 'none');
+        });
+        // 메뉴 호버시 드롭다운 메뉴 보이기 구현부 끝
+
+        // 미디어쿼리 이후 바 클릭하면 전체 메뉴 열리기
+        $('.all-btn').on('click', function(){
+            event.preventDefault();
+            $('.relative ul.center-menu').toggleClass('open');
+        });
+
+        // 스크롤시 고정메뉴 배경색 바꾸기 구현부
+        const fixedmenu = document.querySelector(".fixed-menu");
+        const fixedmenuHeight = fixedmenu.getBoundingClientRect().height;
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > fixedmenuHeight) {
+                $('.main-logo').attr('src', 'images/main/logo_daks_black.png');
+                $('.fixed-menu').addClass('scrolldown');
+                    
+        } else {
+            $('.fixed-menu').removeClass('scrolldown');
+            $('.main-logo').attr('src', 'images/main/logo_daks_white.png');
+        }
+        });
+        // 스크롤시 고정메뉴 배경색 바꾸기 구현부 끝
+
+        // 메인 이미지 슬라이드 구현부
+        $(document).ready(function(){
+        // 배열로 이미지 저장
+        let imgList = ["4955e96f09a940238c96481bb72590d8.jpg","bcfc51b4d69e493fb1cf61f1a021419d.jpg","ce5b9a2fb88f41adaf80ec06400dcdac.jpg"];
+        //배열의 인덱스 변수 선언/초기화
+        let index = 0;
+        //이미지 요소 찾아오기
+        let $banner = $(".mainslide");
+
+        //5초마다 이미지가 넘어가게 만들기
+        setInterval(function(){
+            // 다음 이미지를 인덱스로 불러오기
+            index++;
+
+            if(index >= imgList.length){
+                index = 0;
+            }
+            let imgName = imgList[index];
+            //src로 attr을 이용하여 이미지 바꾸기
+            $banner.attr("src", "images/main/" + imgName);
+            // document.write(imgName + "<br/>");
+            }, 20000);
+        });
+        
+
+        //슬라이드 사진따라서 액티브버튼 바꾸기 구현
+
+        $(document).ready(function(){
+
+            setInterval (function(){
+            let mainimg = $('.mainslide').attr("src");
+
+            switch(mainimg){
+                case "images/main/4955e96f09a940238c96481bb72590d8.jpg":
+                    $('.slide-btn.b1').addClass('active');
+                    $('.slide-btn.b2').removeClass('active');
+                    $('.slide-btn.b3').removeClass('active');
+                    break;
+                
+                case "images/main/bcfc51b4d69e493fb1cf61f1a021419d.jpg":
+                    $('.slide-btn.b1').removeClass('active');
+                    $('.slide-btn.b2').addClass('active');
+                    $('.slide-btn.b3').removeClass('active');
+                    break;
+
+                case "images/main/ce5b9a2fb88f41adaf80ec06400dcdac.jpg":
+                    $('.slide-btn.b1').removeClass('active');
+                    $('.slide-btn.b2').removeClass('active');
+                    $('.slide-btn.b3').addClass('active');
+                    break;
+                
+                default: break;
+            }
+        }, 20001);
+        });
+        //슬라이드 사진따라서 액티브버튼 바꾸기
+
+        // 슬라이드 버튼 클릭시 해당 이미지로 넘어가기 구현부
+        $('.b1').on('click', function(){
+            event.preventDefault();
+            $('.slide-btn-box > div:not(.b1)').removeClass('active');
+            $(this).addClass('active');
+            $('.mainslide').attr("src","images/main/4955e96f09a940238c96481bb72590d8.jpg")
+        });
+
+        $('.b2').on('click', function(){
+            event.preventDefault();
+            $('.slide-btn-box > div:not(.b2)').removeClass('active');
+            $(this).addClass('active');
+            $('.mainslide').attr("src","images/main/bcfc51b4d69e493fb1cf61f1a021419d.jpg")
+        });
+
+        $('.b3').on('click', function(){
+            event.preventDefault();
+            $('.slide-btn-box > div:not(.b3)').removeClass('active');
+            $(this).addClass('active');
+            $('.mainslide').attr("src","images/main/ce5b9a2fb88f41adaf80ec06400dcdac.jpg")
+        });
+        // 슬라이드 버튼 클릭시 해당 이미지로 넘어가기 구현부 끝
+
+        // 위로가기 버튼 구현부 시작
+        $(function(){
+            $('.go-top').on('click', function(e){
+                e.preventDefault();
+                $('html,body').animate({scrollTop:0}, 500);
+            });
+        });
+        // 위로가기 버튼 구현부 끝
+
+        //li메뉴 셀렉트처럼 만들기 Family site 구현부
+        $('.first-li').mouseover(function(){
+            $('.none-li').css('opacity', '1');
+            $('.fa-chevron-down').attr('class', 'fa fa-chevron-up');
+        });
+
+        $('.select').mouseleave(function(){
+            $('.none-li').css('opacity', '0');
+            $('.fa-chevron-up').attr('class', 'fa fa-chevron-down');
+        });
+        //li메뉴 셀렉트처럼 만들기 Family site 구현부 끝
+    </script>
+    <!-- 자바스크립트 끝 -->
 </body>
 </html>
