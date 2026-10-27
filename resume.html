@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="이명재의 이력서. 영상 AI 모델 학습·평가, DeepStream 시스템 통합, 현장 오류 분석과 연구개발 문서 작성 경험을 소개합니다.">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://leemj1152.github.io/resume.html"><title>이명재 · 영상 AI 개발·검증</title>
+  <style>
+    :root { --ink:#142a35; --muted:#53646d; --accent:#3657d8; --line:#dbe3e5; --paper:#fff; --soft:#edf0f8; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#f5f5ef; color:var(--ink); font-family:"Pretendard","Noto Sans CJK KR","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; font-size:14px; line-height:1.72; word-break:keep-all; overflow-wrap:break-word; }
+    a { color:var(--accent); text-underline-offset:4px; }
+    a:focus-visible,button:focus-visible { outline:3px solid #d49d37; outline-offset:4px; }
+    .toolbar { max-width:960px; margin:24px auto 16px; padding:0 8px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .toolbar a { color:var(--muted); font-weight:600; text-decoration:none; }
+    .print-button { border:1px solid var(--accent); border-radius:7px; padding:9px 17px; background:var(--accent); color:#fff; font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
+    .print-button:hover { background:#0d504c; }
+    .resume { max-width:960px; margin:0 auto 40px; padding:52px 58px 36px; background:var(--paper); border-top:7px solid var(--accent); box-shadow:0 10px 40px #142a350b; }
+    .masthead { display:flex; justify-content:space-between; align-items:flex-end; gap:24px; padding-bottom:25px; border-bottom:2px solid var(--ink); }
+    .eyebrow { margin:0 0 6px; color:var(--accent); font-size:11px; font-weight:800; letter-spacing:2px; }
+    h1 { margin:0; font-size:38px; line-height:1.25; letter-spacing:-1.5px; }
+    .role { margin:8px 0 0; font-size:19px; font-weight:600; letter-spacing:-.4px; }
+    .profile-link { flex-shrink:0; text-align:right; font-size:12px; }
+    .profile-link span { display:block; margin-bottom:4px; color:var(--muted); font-size:10px; font-weight:700; letter-spacing:1px; }
+    .introduction { margin:23px 0 27px; font-size:14px; color:#344b56; }
+    .introduction strong { color:var(--ink); font-weight:700; }
+    .layout { display:grid; grid-template-columns:minmax(0,1fr) 235px; gap:34px; }
+    section { margin-bottom:25px; }
+    h2 { margin:0 0 13px; padding-bottom:8px; border-bottom:1px solid var(--line); font-size:16px; letter-spacing:-.3px; }
+    h3 { margin:0 0 7px; font-size:14px; line-height:1.55; letter-spacing:-.2px; }
+    p { margin:0 0 9px; }
+    .employment { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:6px; }
+    .employment strong { font-size:15px; }
+    .period { flex-shrink:0; color:var(--muted); font-size:12px; font-variant-numeric:tabular-nums; }
+    .context { color:var(--accent); font-weight:600; font-size:12px; }
+    ul { margin:8px 0 0; padding-left:17px; }
+    li { margin-bottom:5px; padding-left:2px; }
+    li::marker { color:var(--accent); }
+    .project { margin:0 0 20px; break-inside:avoid; }
+    .project:last-child { margin-bottom:0; }
+    .project-title { display:flex; gap:10px; align-items:baseline; }
+    .number { color:var(--accent); font-size:11px; font-weight:800; letter-spacing:.5px; }
+    .project p { color:#3d505b; font-size:13px; }
+    .stack { margin-top:8px; color:var(--accent); font-size:11px; font-weight:600; }
+    .sidebar { border-left:1px solid var(--line); padding-left:25px; }
+    .sidebar h2 { font-size:14px; }
+    .sidebar h3 { margin-bottom:4px; font-size:12px; }
+    .sidebar p { color:var(--muted); font-size:12px; }
+    .skill-group { margin-bottom:13px; }
+    .rd { padding:15px; background:var(--soft); border-radius:6px; }
+    .rd h2 { border-color:#ccddda; }
+    .rd p { color:#365650; }
+    .approach { font-size:12px; color:var(--muted); }
+    .approach li { margin-bottom:9px; }
+    footer { margin-top:12px; padding-top:14px; border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:10px; color:var(--muted); font-size:10px; }
+    @media (max-width:700px) {
+      body { font-size:14px; }
+      .toolbar { margin:16px 14px 12px; padding:0; }
+      .resume { margin:0; padding:30px 24px; border-top-width:5px; box-shadow:none; }
+      .masthead { align-items:flex-start; flex-direction:column; gap:18px; padding-bottom:20px; }
+      h1 { font-size:34px; }
+      .role { font-size:18px; }
+      .profile-link { text-align:left; }
+      .profile-link span { display:inline; margin-right:8px; }
+      .introduction { margin:20px 0 25px; }
+      .layout { grid-template-columns:1fr; gap:0; }
+      .sidebar { border-left:0; padding-left:0; }
+      .sidebar h2 { font-size:16px; }
+      .sidebar p,.sidebar h3,.approach { font-size:13px; }
+      .skill-group { margin-bottom:14px; }
+      .employment { flex-wrap:wrap; gap:3px 10px; }
+      footer { flex-wrap:wrap; }
+    }
+    @page { size:A4; margin:13mm 13mm 12mm; }
+    @media print {
+      body { background:#fff; font-size:9pt; line-height:1.58; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+      .toolbar { display:none; }
+      .resume { max-width:none; margin:0; padding:7mm 1mm 0; border-top:4px solid var(--accent); box-shadow:none; }
+      .masthead { flex-direction:row; align-items:flex-end; padding-bottom:5mm; gap:6mm; }
+      .eyebrow { font-size:7pt; margin-bottom:1.5mm; }
+      h1 { font-size:26pt; }
+      .role { margin-top:2mm; font-size:13pt; }
+      .profile-link { font-size:8pt; text-align:right; }
+      .profile-link span { display:block; font-size:6.5pt; }
+      .introduction { margin:5mm 0 6mm; font-size:9pt; }
+      .layout { display:grid; grid-template-columns:minmax(0,1fr) 48mm; gap:7mm; }
+      .sidebar { border-left:1px solid var(--line); padding-left:5mm; }
+      section { margin-bottom:5mm; }
+      h2 { margin-bottom:3mm; padding-bottom:1.7mm; font-size:11pt; break-after:avoid; }
+      h3 { font-size:9.4pt; margin-bottom:1.5mm; }
+      .employment strong { font-size:10pt; }
+      .employment { flex-wrap:nowrap; gap:2mm; }
+      .period,.context { font-size:7.8pt; }
+      li { margin-bottom:1.1mm; }
+      .project { margin-bottom:4.5mm; }
+      .project p { font-size:8.5pt; margin-bottom:1.5mm; }
+      .number { font-size:7pt; }
+      .stack { margin-top:1.5mm; font-size:7.2pt; }
+      .sidebar h2 { font-size:9.5pt; }
+      .sidebar h3 { font-size:8pt; }
+      .sidebar p,.approach { font-size:8pt; }
+      .skill-group { margin-bottom:3mm; }
+      .rd { padding:3mm; border-radius:1.5mm; break-inside:avoid; }
+      .approach li { margin-bottom:2mm; }
+      a { text-decoration:none; }
+      footer { margin-top:3mm; padding-top:3mm; font-size:7pt; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="toolbar" aria-label="이력서 도구">
+    <a href="index.html">← 포트폴리오</a>
+    <button class="print-button" type="button" onclick="window.print()">인쇄 · PDF 저장</button>
+  </nav>
+
+  <main class="resume">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">RESUME</p>
+        <h1>이명재</h1>
+        <p class="role">영상 AI 개발·검증</p>
+      </div>
+      <div class="profile-link">
+        <span>GITHUB</span>
+        <a href="https://github.com/leemj1152">github.com/leemj1152</a>
+      </div>
+    </header>
+
+    <p class="introduction"><strong>현장의 오류를 데이터와 시스템 개선으로 연결하는 영상 AI 연구원입니다.</strong> 사람 행동 인식 시스템을 유지보수하며 모델 학습·평가, 실시간 추론 통합과 운영 검증을 수행했습니다. 실험 결과와 실증 경험을 연구개발계획서·최종보고서로 정리했습니다.</p>
+
+    <div class="layout">
+      <div class="main-column">
+        <section aria-labelledby="experience-title">
+          <h2 id="experience-title">경력</h2>
+          <div class="employment">
+            <strong>AI연구소 연구원</strong>
+            <span class="period">2025.10–현재</span>
+          </div>
+          <p class="context">UMS 사람 행동 인식 시스템 · 연구개발 과제</p>
+          <ul>
+            <li>현장 오탐·미탐 데이터를 분석하고 검출·분류 모델을 재학습·평가했습니다.</li>
+            <li>행동 인식 모델과 VLM 재확인 경로를 비교·연동하고 운영 오류를 개선했습니다.</li>
+            <li>기존 팀 모듈을 기반으로 DeepStream에 모델을 이식하고 이벤트·영상·DB 연결을 점검했습니다.</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="projects-title">
+          <h2 id="projects-title">대표 프로젝트</h2>
+
+          <article class="project">
+            <div class="project-title"><span class="number">01</span><h3>VLM 사람 확인 모델 비교와 오류 분석</h3></div>
+            <p>동일한 입력과 샘플링 조건에서 VideoChat·Qwen의 사람 확인 결과를 비교했습니다. 비사람 오통과 감소와 새롭게 발생한 사람 미탐을 함께 분석해 모델 선택과 후속 검증에 반영했습니다.</p>
+            <p>입력 처리와 응답 형식을 점검하고, 기존 API와의 운영 연계 및 복구 절차를 정리했습니다.</p>
+            <div class="stack">Python · VLM · 비교 평가 · API 연동</div>
+          </article>
+
+          <article class="project">
+            <div class="project-title"><span class="number">02</span><h3>DeepStream 통합과 처리 경로 개선</h3></div>
+            <p>기존 팀 모듈에 로컬 모델과 이벤트 경로를 이식하고, 단일 PGIE 구성과 GPU 전처리를 적용했습니다. 운영 비교에서 추론 속도를 유지하면서 GPU와 메모리 사용량이 줄어드는 것을 확인했습니다.</p>
+            <p>다채널 부하시험에서는 실제 영상 수신, 검출 속도, VLM 지연과 이벤트 미디어 저장을 함께 점검했습니다.</p>
+            <div class="stack">DeepStream · TensorRT · ONNX · Docker · RTSP</div>
+          </article>
+
+          <article class="project">
+            <div class="project-title"><span class="number">03</span><h3>현장 데이터 기반 모델 학습과 검증</h3></div>
+            <p>배경 물체와 사람 유사 물체의 오탐을 수집해 YOLO·EfficientNet 학습 데이터를 보강했습니다. 학습 이후 시간대의 오탐 표본과 기존 사람 표본을 비교하고, 원거리·가림 장면의 누락을 추적했습니다.</p>
+            <p>행동 인식·비식별화 후보도 입력 구성과 클래스별 오류를 분석하고 후속 검수 자료를 정리했습니다.</p>
+            <div class="stack">PyTorch · OpenCV · YOLO · EfficientNet · 데이터 검수</div>
+          </article>
+        </section>
+      </div>
+
+      <aside class="sidebar" aria-label="기술 경험과 연구개발 업무">
+        <section aria-labelledby="skills-title">
+          <h2 id="skills-title">기술 경험</h2>
+          <div class="skill-group">
+            <h3>모델·데이터</h3>
+            <p>Python, PyTorch, OpenCV<br>YOLO, EfficientNet<br>ST-GCN, MoViNet<br>VideoChat, Qwen</p>
+          </div>
+          <div class="skill-group">
+            <h3>추론·실행 환경</h3>
+            <p>DeepStream, TensorRT, ONNX<br>Linux, Docker, Git</p>
+          </div>
+          <div class="skill-group">
+            <h3>연동·운영</h3>
+            <p>RTSP 영상 입력<br>이벤트·미디어·DB 연계<br>GPU 자원 계측·로그 분석</p>
+          </div>
+        </section>
+
+        <section class="rd" aria-labelledby="rd-title">
+          <h2 id="rd-title">연구개발 과제</h2>
+          <h3>패스트트랙 · SBA</h3>
+          <p>연구개발계획서·최종보고서와 실증·회의·발표자료를 작성했습니다.</p>
+          <p>구현 내용과 평가 지표, 실험 조건을 연결해 기술 내용을 설명하고 후속 검증 과제를 정리했습니다.</p>
+        </section>
+
+        <section aria-labelledby="approach-title">
+          <h2 id="approach-title">업무 방식</h2>
+          <ul class="approach">
+            <li>검출·입력·분류·저장 단계로 오류를 나눠 원인을 분석했습니다.</li>
+            <li>오탐 감소와 사람 누락을 함께 살펴 적용 여부를 판단했습니다.</li>
+            <li>실험 환경과 운영 환경을 구분하고 변경·복구 절차를 기록했습니다.</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+    <footer>
+      <span>이명재 · 영상 AI 개발·검증</span>
+      <a href="https://github.com/leemj1152">github.com/leemj1152</a>
+    </footer>
+  </main>
+</body>
+</html>
