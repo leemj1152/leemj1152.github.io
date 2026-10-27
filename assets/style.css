@@ -1402,3 +1402,5 @@ ul {
   .project-row, .case-body section, .research-list article { break-inside: avoid; }
   a { color: inherit; }
 }
+
+.section-actions { display: flex; flex-wrap: wrap; gap: 14px 26px; align-items: center; }
